@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap');
+
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  
+  ion-content {
+    --background: #FBF8F4; /* Cor de fundo personalizada */
+  }
+  
+  p{
+    color: #595859;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    padding-top: 40px; 
+    font-size: x-large;
+    font-weight: 100;
+  }
+
+  .text-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Mantém o texto e a imagem lado a lado */
+    margin-top: 60px; /* Ajusta a distância do topo da tela */
+    padding: 20px; /* Adiciona um espaçamento interno horizontal */
+  }
+  
+  .image {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 10px; /* Espaço entre a imagem e o texto */
+  }
+  .center-text {
+    font-size: 60px; /* Tamanho da fonte */
+    font-family: 'Josefin Sans', sans-serif; /* Fonte aplicada */
+    line-height: 1.5; /* Ajuste a altura da linha conforme necessário */
+    color: #D9B1AD;
+    margin-top: 0; /* Remove qualquer margem padrão que possa empurrar o texto para baixo */
+    padding-top: 20px; /* Ajusta o espaçamento no topo */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+  }
+  h1 {
+    color: #595859;
+    font-size: 27px;
+    font-family: 'Josefin Sans', sans-serif; 
+    text-align: center;
+    margin-bottom: 40px; /* Espaçamento abaixo do h1 */
+    margin-top: 40px; /* Aumenta a distância entre o h1 e o conteúdo acima dele */
+  }
+ 
+
+  .botao1 {
+    width: 80%; /* Diminui o tamanho horizontalmente */
+    min-height: 50px; /* Define uma altura mínima para o botão */
+    height: 30px; /* Define uma altura fixa para o botão */
+    color: white; /* Altera a cor do texto */
+    border-radius: 10px; /* Opção para bordas arredondadas */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Garante que o botão se comporte como um bloco */
+    margin-top: 0px;
+    font-size: 20px; /* Tamanho da fonte */
+    line-height: 30px; /* Define a altura da linha para centralizar verticalmente o texto */
+    text-align: center; /* Centraliza o texto */
+    background-color: #A95858;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  .botao2 {
+    width: 80%; /* Diminui o tamanho horizontalmente */
+    min-height: 50px; /* Define uma altura mínima para o botão */
+    height: 30px; /* Define uma altura fixa para o botão */
+    color: white; /* Altera a cor do texto */
+    border-radius: 10px; /* Opção para bordas arredondadas */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Garante que o botão se comporte como um bloco */
+    margin-top: 20px;
+    font-size: 20px; /* Tamanho da fonte */
+    line-height: 30px; /* Define a altura da linha para centralizar verticalmente o texto */
+    text-align: center; /* Centraliza o texto */
+    background-color: #D9B1AD;
+    font-family: 'Prompt', sans-serif;
+    margin-bottom: 0px;
+  }
+
+  .bottom-text{
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  .link {
+    color: #595859; /* Cor do link */
+    text-decoration: underline; /* Adiciona sublinhado */
+    cursor: pointer; /* Muda o cursor para mãozinha */
+  }

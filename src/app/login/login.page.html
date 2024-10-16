@@ -1,0 +1,35 @@
+<ion-content class="custom-background">
+  <div class="text-image-container">
+    <div class="center-text">
+      tuli
+    </div>
+    <img src="assets/icon/Vector 7.png " style="width: 20px; height: 40px;" alt="Descrição da imagem" class="image" />
+  </div>
+
+  <p class="text-1">Bem Vindo(a)!</p>
+  <p class="text-2">Faça seu login:</p>
+
+ 
+  <ion-item class="custom-input">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" ></ion-input>
+  </ion-item>
+
+
+  <ion-item class="custom-input2">
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password" ></ion-input>
+  </ion-item>
+
+  
+  <p class="link-text">
+    <a [routerLink]="['/forgot-password']">Esqueceu sua senha?</a>
+  </p>
+
+  <ion-button class="botao" expand="block" color="custom">
+    Entrar
+  </ion-button>
+
+  <p class="bottom-text">Ainda não tem uma conta?  <a class="link" [routerLink]="['/cadastro']">Cadastre-se aqui!</a></p>
+
+</ion-content>

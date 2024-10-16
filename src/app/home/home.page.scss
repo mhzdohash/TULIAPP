@@ -1,0 +1,51 @@
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content {
+  --background: #FBF8F4; /* Cor de fundo personalizada */
+
+  .text-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  .side-image {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+  }
+  
+  
+}
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Ajuste a altura do contêiner conforme necessário */
+  font-size: 100px; /* Tamanho da fonte */
+  font-weight: 300; /* Peso mais fino da fonte */
+  font-family: 'Josefin Sans', sans-serif; /* Fonte aplicada */
+  line-height: 1.5; /* Ajuste a altura da linha conforme necessário */
+  color: #D9B1AD;
+}
+
+

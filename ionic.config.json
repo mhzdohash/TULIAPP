@@ -1,0 +1,7 @@
+{
+  "name": "TuliApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
