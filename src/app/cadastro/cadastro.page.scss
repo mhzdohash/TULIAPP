@@ -6,17 +6,17 @@
     left: 0;
     right: 0;
   }
-  
-  
+
+
   ion-content {
     --background: #FBF8F4; /* Cor de fundo personalizada */
   }
-  
+
   p{
     color: #595859;
     text-align: center;
     font-family: 'Prompt', sans-serif;
-    padding-top: 40px; 
+    padding-top: 40px;
     font-size: x-large;
     font-weight: 100;
   }
@@ -29,7 +29,7 @@
     margin-top: 60px; /* Ajusta a distância do topo da tela */
     padding: 20px; /* Adiciona um espaçamento interno horizontal */
   }
-  
+
   .image {
     width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
@@ -47,12 +47,12 @@
   h1 {
     color: #595859;
     font-size: 27px;
-    font-family: 'Josefin Sans', sans-serif; 
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     margin-bottom: 40px; /* Espaçamento abaixo do h1 */
     margin-top: 40px; /* Aumenta a distância entre o h1 e o conteúdo acima dele */
   }
- 
+
 
   .botao1 {
     width: 80%; /* Diminui o tamanho horizontalmente */
@@ -69,7 +69,7 @@
     background-color: #A95858;
     font-family: 'Prompt', sans-serif;
   }
-  
+
   .botao2 {
     width: 80%; /* Diminui o tamanho horizontalmente */
     min-height: 50px; /* Define uma altura mínima para o botão */
@@ -85,6 +85,7 @@
     background-color: #D9B1AD;
     font-family: 'Prompt', sans-serif;
     margin-bottom: 0px;
+
   }
 
   .bottom-text{
@@ -96,4 +97,9 @@
     color: #595859; /* Cor do link */
     text-decoration: underline; /* Adiciona sublinhado */
     cursor: pointer; /* Muda o cursor para mãozinha */
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
   }
