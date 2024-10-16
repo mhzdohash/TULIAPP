@@ -9,19 +9,20 @@
   <p class="text-1">Bem Vindo(a)!</p>
   <p class="text-2">Faça seu login:</p>
 
- 
-  <ion-item class="custom-input">
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="email" ></ion-input>
-  </ion-item>
+
+  <div class="container">
+    <ion-item class="custom-input">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="custom-input2">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </div>
 
 
-  <ion-item class="custom-input2">
-    <ion-label position="floating">Senha</ion-label>
-    <ion-input type="password" ></ion-input>
-  </ion-item>
-
-  
   <p class="link-text">
     <a [routerLink]="['/forgot-password']">Esqueceu sua senha?</a>
   </p>

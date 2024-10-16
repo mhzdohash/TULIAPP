@@ -1,7 +1,7 @@
 ion-content {
     --background: #FBF8F4; /* Cor de fundo personalizada */
   }
-  
+
   .text-image-container {
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ ion-content {
     margin-top: 60px; /* Ajusta a distância do topo da tela */
     padding: 20px; /* Adiciona um espaçamento interno horizontal */
   }
-  
+
   .image {
     width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
@@ -25,7 +25,7 @@ ion-content {
     padding-top: 20px; /* Ajusta o espaçamento no topo */
     text-align: left; /* Garante que o texto fique alinhado à esquerda */
   }
-  
+
   .text-1 {
     font-family: 'Josefin Sans', sans-serif;
     color: #595859;
@@ -41,49 +41,41 @@ ion-content {
     margin-top: 10px;
     font-size: 20px;
   }
-  
+
   .link-text {
     text-align: left;
-    margin-left: 10px;
+    margin-left: 60px;
   }
-  
+
   .link-text a {
     color: #595859; /* Cor do link */
     text-decoration: underline; /* Adiciona sublinhado */
     cursor: pointer; /* Muda o cursor para mãozinha */
   }
-  
+
   .bottom-text {
     text-align: center;
     margin-top: 20px;
     color: #595859;
   }
-  
-  ion-item {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Espaçamento no topo */
+  }
+
+  .custom-input, .custom-input2 {
+    width: 100%; /* Largura completa */
+    max-width: 300px; /* Largura máxima */
+    background-color: var(--background);
+    border: 1px solid var(--border-color);
+    color: var(--color);
+    border-radius: 8px;
     margin-top: 15px;
   }
 
-  .custom-input {
-    --background: #F0F0F0; /* Cor de fundo da caixa */
-    --border-color: #D9B1AD;  /* Cor da borda */
-    --color: #333;         /* Cor do texto dentro da caixa */
-    --padding-start: 12px; /* Padding interno na esquerda */
-    --padding-end: 12px;   /* Padding interno na direita */
-    --height: 10px;        /* Altura da caixa */
-    border-radius: 8px;    /* Bordas arredondadas */
-    margin-top: 15px;      /* Espaçamento entre os itens */
-  }
-
-  .custom-input2 {
-    --background: #F0F0F0; /* Cor de fundo da caixa */
-    --border-color: #ccc;  /* Cor da borda */
-    --color: #333;         /* Cor do texto dentro da caixa */
-    --padding-start: 12px; /* Padding interno na esquerda */
-    --padding-end: 12px;   /* Padding interno na direita */
-    --height: 50px;        /* Altura da caixa */
-    border-radius: 8px;    /* Bordas arredondadas */
-    margin-top: 15px;      /* Espaçamento entre os itens */
-  }
 
   .botao {
     width: 80%; /* Diminui o tamanho horizontalmente */
@@ -106,4 +98,3 @@ ion-content {
     text-decoration: underline; /* Adiciona sublinhado */
     cursor: pointer; /* Muda o cursor para mãozinha */
   }
-  
