@@ -23,14 +23,7 @@ ion-content {
   --background: #FBF8F4;
 }
 
-p{
-  color: #595859;
-  text-align: center;
-  font-family: 'Prompt', sans-serif;
-  padding-top: 40px;
-  font-size: x-large;
-  font-weight: 100;
-}
+
 
 .text-image-container {
   display: flex;
@@ -73,6 +66,7 @@ p{
   flex-direction: column;
   align-items: center;     /* Centraliza horizontalmente */
   padding-top: 20px;       /* Espaço no topo para ajustá-las na página */
+
 }
 
 ion-item {
@@ -84,20 +78,25 @@ ion-item {
     border-radius: 8px;
     margin-top: 15px;
     font-family: 'Prompt', sans-serif;
-
+    height: 65px; /* Reduz a altura das caixas de texto */
+    --inner-padding-top: 0px;  /* Reduz o padding interno superior */
+    --inner-padding-bottom: 0px; /* Reduz o padding interno inferior */
 }
 
-.DatadeNascimento {
-  font-family: 'Prompt', sans-serif;   /* Aplica a fonte para o h1 */
-  font-size: 16px;                     /* Tamanho da fonte */
-  margin-bottom: 5px;                  /* Espaçamento inferior */
+.birth-date {
+  font-family: 'Prompt', sans-serif;
+  font-size: 20px;
+  margin-bottom: 0px;
   text-align: left;
+  width: 100%;
+  padding-left: 60px; /* Adiciona um espaço à esquerda */
 }
 
 ion-item ion-label {
   font-family: 'Prompt', sans-serif !important;
-  font-size: 16px !important;    /* Tamanho da fonte */
+  font-size: px !important;    /* Tamanho da fonte */
   color: #333;                   /* Cor do texto do label */
+  font-size: 18;
 }
 
 .info-text {
@@ -131,14 +130,6 @@ ion-button {
   padding-top: 10px;
 }
 
-.DatadeNascimento{
-  margin-left: 18px;
-  font-size: 16px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  font-family: 'Prompt', sans-serif;
-  font-weight: normal;
-}
 
 a{
   color: #595859;
