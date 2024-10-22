@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'home-especialista',
     loadChildren: () => import('./home-especialista/home-especialista.module').then( m => m.HomeEspecialistaPageModule)
   },
+  {
+    path: 'especialista-calendario',
+    loadChildren: () => import('./especialista-calendario/especialista-calendario.module').then( m => m.EspecialistaCalendarioPageModule)
+  },
 
 ];
 

@@ -66,40 +66,27 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-
   }
 
-  ion-item {
+  .custom-input, .custom-input2 ion-input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .custom-input, .custom-input2 {
     width: 100%;
     max-width: 300px;
     background-color: #FFFFFF !important;
     border-radius: 8px;
     margin-top: 15px;
     color: #000000;
-    border: 1px solid black;
-      font-family: 'Prompt', sans-serif;
-      height: 65px;
-      --inner-padding-top: 0px;
-      --inner-padding-bottom: 0px;
-      --background: #FFFFFF !important;
-  }
-
-
-  .birth-date {
+    border: 1px solid #D9B1AD;
     font-family: 'Prompt', sans-serif;
-    font-size: 20px;
-    margin-bottom: 0px;
-    text-align: left;
-    width: 100%;
-    padding-left: 60px;
-    color: #000000;
   }
 
-  ion-item ion-label {
-    font-family: 'Prompt', sans-serif !important;
-    font-size: 15px !important;
-    color: #333;
-
+  ion-item {
+    --background: #FFFFFF !important;
   }
   .info-text {
     text-align: center;
@@ -120,7 +107,7 @@
       margin-top: 0px;
       font-size: 20px;
       line-height: 30px;
-      text-align: center; 
+      text-align: center;
       background-color: #A95858;
       font-family: 'Prompt', sans-serif;
 
@@ -147,3 +134,12 @@
   }
 
 
+  .datadenascimento{
+    display: flex;
+    font-family: 'Prompt', sans-serif;
+    color: #595859;
+    font-weight: 500;
+    flex-direction: column;
+    font-size: 20px;
+    padding-right: 100px;
+  }

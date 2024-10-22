@@ -64,42 +64,29 @@ ion-content {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;     /* Centraliza horizontalmente */
-  padding-top: 20px;       /* Espaço no topo para ajustá-las na página */
-
+  align-items: center;
+  padding-top: 20px;
 }
 
-ion-item {
-  width: 100%; /* Largura completa */
-  max-width: 300px; /* Largura máxima */
-  background-color: #FFFFFF !important; /* Cor de fundo branca */
+.custom-input, .custom-input2 ion-input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-input, .custom-input2 {
+  width: 100%;
+  max-width: 300px;
+  background-color: #FFFFFF !important;
   border-radius: 8px;
   margin-top: 15px;
   color: #000000;
-  border: 1px solid black; /* Mantém uma borda preta externa */
-    font-family: 'Prompt', sans-serif;
-    height: 65px; /* Reduz a altura das caixas de texto */
-    --inner-padding-top: 0px;  /* Reduz o padding interno superior */
-    --inner-padding-bottom: 0px; /* Reduz o padding interno inferior */
-    --background: #FFFFFF !important; /* Garante que o fundo do ion-item seja branco */
-}
-
-
-.birth-date {
+  border: 1px solid #D9B1AD;
   font-family: 'Prompt', sans-serif;
-  font-size: 20px;
-  margin-bottom: 0px;
-  text-align: left;
-  width: 100%;
-  padding-left: 60px; /* Adiciona um espaço à esquerda */
-  color: #000000;
 }
 
-ion-item ion-label {
-  font-family: 'Prompt', sans-serif !important;
-  font-size: px !important;    /* Tamanho da fonte */
-  color: #333;                   /* Cor do texto do label */
-  font-size: 18;
+ion-item {
+  --background: #FFFFFF !important;
 }
 
 .info-text {
@@ -111,20 +98,20 @@ ion-item ion-label {
 }
 
 ion-button {
-  width: 80%; /* Diminui o tamanho horizontalmente */
-    min-height: 50px; /* Define uma altura mínima para o botão */
-    height: 30px; /* Define uma altura fixa para o botão */
-    color: white; /* Altera a cor do texto */
-    border-radius: 10px; /* Opção para bordas arredondadas */
-    margin: 0 auto; /* Centraliza o botão horizontalmente */
-    display: block; /* Garante que o botão se comporte como um bloco */
+  width: 80%;
+    min-height: 50px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
     margin-top: 0px;
-    font-size: 20px; /* Tamanho da fonte */
-    line-height: 30px; /* Define a altura da linha para centralizar verticalmente o texto */
-    text-align: center; /* Centraliza o texto */
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
     background-color: #A95858;
     font-family: 'Prompt', sans-serif;
-    
+
 }
 
 .footer-text {
@@ -145,4 +132,14 @@ a{
   color: #FBF8F4;
   text-decoration: none;
   cursor: pointer;
+}
+
+.datadenascimento{
+  display: flex;
+  font-family: 'Prompt', sans-serif;
+  color: #595859;
+  font-weight: 500;
+  flex-direction: column;
+  font-size: 20px;
+  padding-right: 100px;
 }
