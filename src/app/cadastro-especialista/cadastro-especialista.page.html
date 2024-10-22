@@ -1,13 +1,73 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cadastro-especialista</ion-title>
-  </ion-toolbar>
-</ion-header>
+<head>
+  <script src="js/mascaraRG.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<ion-content class="custom-background">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cadastro-especialista</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="custom-back-arrow" >
+    <ion-icon name="arrow-back-outline" [routerLink]="['/cadastro']" ></ion-icon>
+  </div>
+
+
+<div class="text-image-container">
+  <div class="center-text">
+    ESPECIALISTA
+  </div>
+  <img src="assets/icon/Vector 8.png " style="width: 20px; height: 40px;" alt="Descrição da imagem" class="image" />
+</div>
+
+  <p class="description-text">
+    Preencha os campos:
+  </p>
+
+
+  <div class="container">
+    <ion-item>
+      <ion-label position="floating">Nome completo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <p class="birth-date">Data de Nascimento</p>
+
+  <ion-item >
+    <ion-label position="floating"></ion-label>
+    <ion-input type="date"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="center">RG</ion-label>
+    <ion-input type="text" id="rg" maxlength="12" placeholder="00.000.000-0"></ion-input>
+</ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirmar Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </div>
+
+
+
+  <!-- Texto abaixo dos campos de texto -->
+  <p class="info-text">
+    Ao clicar em “Avançar”, você concorda com nossos Termos e Condições e com a nossa Política de Privacidade.
+  </p>
+
+  <ion-button class="botao" expand="block" color="custom">
+    <a class="link-entrar" [routerLink]="['/registro-emec']">Avançar</a>
+  </ion-button>
+
+  <!-- Texto abaixo do botão -->
+  <p class="footer-text">
+    Já possui cadastro?  <a [routerLink]="['/login']" >Faça o login</a>
+  </p>
 </ion-content>

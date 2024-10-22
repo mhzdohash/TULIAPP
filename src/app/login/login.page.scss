@@ -66,16 +66,25 @@ ion-content {
     padding-top: 20px; /* Espaçamento no topo */
   }
 
+  .custom-input, .custom-input2 ion-input {
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o outline (a linha ao redor quando em foco) */
+    box-shadow: none; /* Remove qualquer sombra que possa parecer uma borda */
+  }
+
   .custom-input, .custom-input2 {
     width: 100%; /* Largura completa */
     max-width: 300px; /* Largura máxima */
-    background-color: var(--background);
-    border: 1px solid var(--border-color);
-    color: var(--color);
+    background-color: #FFFFFF !important; /* Cor de fundo branca */
     border-radius: 8px;
     margin-top: 15px;
+    color: #000000;
+    border: 1px solid black; /* Mantém uma borda preta externa */
   }
-
+  
+  ion-item {
+    --background: #FFFFFF !important; /* Garante que o fundo do ion-item seja branco */
+  }
 
   .botao {
     width: 80%; /* Diminui o tamanho horizontalmente */
@@ -91,6 +100,7 @@ ion-content {
     text-align: center; /* Centraliza o texto */
     background-color: #A95858;
     font-family: 'Prompt', sans-serif;
+    
   }
 
   .link {
@@ -98,3 +108,9 @@ ion-content {
     text-decoration: underline; /* Adiciona sublinhado */
     cursor: pointer; /* Muda o cursor para mãozinha */
   }
+
+    .link-entrar{
+      color: #FBF8F4;
+      text-decoration: none;
+      cursor: pointer;
+    }

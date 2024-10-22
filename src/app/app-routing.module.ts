@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'cadastro-especialista',
     loadChildren: () => import('./cadastro-especialista/cadastro-especialista.module').then( m => m.CadastroEspecialistaPageModule)
   },
+  {
+    path: 'registro-emec',
+    loadChildren: () => import('./registro-emec/registro-emec.module').then( m => m.RegistroEmecPageModule)
+  },
 
 ];
 

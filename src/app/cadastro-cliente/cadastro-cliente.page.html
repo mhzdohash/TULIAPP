@@ -56,8 +56,9 @@
     Ao clicar em “Enviar”, você concorda com nossos Termos e Condições e com a nossa Política de Privacidade.
   </p>
 
-  <!-- Botão -->
-  <ion-button color="custom"  expand="block">Enviar</ion-button>
+  <ion-button class="botao" expand="block" color="custom">
+    <a class="link-entrar" [routerLink]="['/forgot-password']">Enviar</a>
+  </ion-button>
 
   <!-- Texto abaixo do botão -->
   <p class="footer-text">

@@ -1,0 +1,126 @@
+<head>
+  <script src="js/mascaraRG.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<ion-content class="custom-background">
+
+  <div class="custom-back-arrow" >
+    <ion-icon name="arrow-back-outline" [routerLink]="['/cadastro']" ></ion-icon>
+  </div>
+
+
+<div class="text-image-container">
+  <div class="center-text">
+    ESPECIALISTA
+  </div>
+  <img src="assets/icon/Vector 8.png " style="width: 20px; height: 40px;" alt="Descrição da imagem" class="image" />
+</div>
+
+  <p class="description-text">
+    Preencha os campos:
+  </p>
+
+  <div class="container">
+  <ion-item> 
+    <ion-label position="center">Curso:</ion-label>
+    <ion-select placeholder="Selecione">
+      <ion-select-option value="curso1">Instituição de Ensino Superior</ion-select-option>
+      <ion-select-option value="curso2">Curso de Graduação</ion-select-option>
+      <ion-select-option value="curso2">Curso de Especialização</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="center">UF:</ion-label>
+    <ion-select placeholder="Selecione" [(ngModel)]="selectedState" (ionChange)="onStateChange()">
+      <ion-select-option value="AC">Acre (AC)</ion-select-option>
+      <ion-select-option value="AL">Alagoas (AL)</ion-select-option>
+      <ion-select-option value="AP">Amapá (AP)</ion-select-option>
+      <ion-select-option value="AM">Amazonas (AM)</ion-select-option>
+      <ion-select-option value="BA">Bahia (BA)</ion-select-option>
+      <ion-select-option value="CE">Ceará (CE)</ion-select-option>
+      <ion-select-option value="DF">Distrito Federal (DF)</ion-select-option>
+      <ion-select-option value="ES">Espírito Santo (ES)</ion-select-option>
+      <ion-select-option value="GO">Goiás (GO)</ion-select-option>
+      <ion-select-option value="MA">Maranhão (MA)</ion-select-option>
+      <ion-select-option value="MT">Mato Grosso (MT)</ion-select-option>
+      <ion-select-option value="MS">Mato Grosso do Sul (MS)</ion-select-option>
+      <ion-select-option value="MG">Minas Gerais (MG)</ion-select-option>
+      <ion-select-option value="PA">Pará (PA)</ion-select-option>
+      <ion-select-option value="PB">Paraíba (PB)</ion-select-option>
+      <ion-select-option value="PR">Paraná (PR)</ion-select-option>
+      <ion-select-option value="PE">Pernambuco (PE)</ion-select-option>
+      <ion-select-option value="PI">Piauí (PI)</ion-select-option>
+      <ion-select-option value="RJ">Rio de Janeiro (RJ)</ion-select-option>
+      <ion-select-option value="RN">Rio Grande do Norte (RN)</ion-select-option>
+      <ion-select-option value="RS">Rio Grande do Sul (RS)</ion-select-option>
+      <ion-select-option value="RO">Rondônia (RO)</ion-select-option>
+      <ion-select-option value="RR">Roraima (RR)</ion-select-option>
+      <ion-select-option value="SC">Santa Catarina (SC)</ion-select-option>
+      <ion-select-option value="SP">São Paulo (SP)</ion-select-option>
+      <ion-select-option value="SE">Sergipe (SE)</ion-select-option>
+      <ion-select-option value="TO">Tocantins (TO)</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="center">Município:</ion-label>
+    <ion-select placeholder="Selecione"  [(ngModel)]="selectedMunicipality">
+      <ion-select-option *ngFor="let municipality of municipalities" [value]="municipality">
+        {{ municipality }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="center">Categ. Administrativa:</ion-label>
+    <ion-select placeholder="Selecione">
+      <ion-select-option value="cat1">Pública Municipal</ion-select-option>
+      <ion-select-option value="cat2">Pública Federal</ion-select-option>
+      <ion-select-option value="cat3">Pública Estadual</ion-select-option>
+      <ion-select-option value="cat4">Privada sem fins lucrativos</ion-select-option>
+      <ion-select-option value="cat5">Privada com fins lucrativos</ion-select-option>
+      <ion-select-option value="cat6">Especial</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="center">Org. Acadêmica:</ion-label>
+    <ion-select placeholder="Selecione">
+      <ion-select-option value="org1">Faculdade</ion-select-option>
+      <ion-select-option value="org2">Centro Universitário</ion-select-option>
+      <ion-select-option value="org3">Institutos Federais</ion-select-option>
+      <ion-select-option value="org4">Universidade</ion-select-option>
+      <ion-select-option value="org5">Escola de Governo</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="center">Credenciamento:</ion-label>
+    <ion-select placeholder="Selecione">
+      <ion-select-option value="cred1">Presencial</ion-select-option>
+      <ion-select-option value="cred2">EAD</ion-select-option>
+      <ion-select-option value="cred3">Presencial - Lato-sensu</ion-select-option>
+      <ion-select-option value="cred4">Escola Governo - EaD</ion-select-option>
+      <ion-select-option value="cred5">Escola Governo - Presencial </ion-select-option>
+
+    </ion-select>
+  </ion-item>
+</div>
+
+ 
+
+
+<ion-button class="botao" expand="block" color="custom">
+  Enviar solicitação
+</ion-button>
+
+  <p class="footer-text">
+    Você receberá o retorno por via de um SMS em até 30 dias após solicitação de contato.
+  </p>
+</ion-content>

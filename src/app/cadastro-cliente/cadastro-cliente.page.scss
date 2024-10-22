@@ -70,18 +70,20 @@ ion-content {
 }
 
 ion-item {
-  width: 100%;
-    max-width: 300px;
-    background-color: var(--background);
-    border: 1px solid var(--border-color);
-    color: var(--color);
-    border-radius: 8px;
-    margin-top: 15px;
+  width: 100%; /* Largura completa */
+  max-width: 300px; /* Largura máxima */
+  background-color: #FFFFFF !important; /* Cor de fundo branca */
+  border-radius: 8px;
+  margin-top: 15px;
+  color: #000000;
+  border: 1px solid black; /* Mantém uma borda preta externa */
     font-family: 'Prompt', sans-serif;
     height: 65px; /* Reduz a altura das caixas de texto */
     --inner-padding-top: 0px;  /* Reduz o padding interno superior */
     --inner-padding-bottom: 0px; /* Reduz o padding interno inferior */
+    --background: #FFFFFF !important; /* Garante que o fundo do ion-item seja branco */
 }
+
 
 .birth-date {
   font-family: 'Prompt', sans-serif;
@@ -90,6 +92,7 @@ ion-item {
   text-align: left;
   width: 100%;
   padding-left: 60px; /* Adiciona um espaço à esquerda */
+  color: #000000;
 }
 
 ion-item ion-label {
@@ -121,6 +124,7 @@ ion-button {
     text-align: center; /* Centraliza o texto */
     background-color: #A95858;
     font-family: 'Prompt', sans-serif;
+    
 }
 
 .footer-text {
@@ -135,4 +139,10 @@ a{
   color: #595859;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.link-entrar{
+  color: #FBF8F4;
+  text-decoration: none;
+  cursor: pointer;
 }
