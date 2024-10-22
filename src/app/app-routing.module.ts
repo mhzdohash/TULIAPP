@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'home-cliente',
     loadChildren: () => import('./home-cliente/home-cliente.module').then( m => m.HomeClientePageModule)
   },
+  {
+    path: 'home-especialista',
+    loadChildren: () => import('./home-especialista/home-especialista.module').then( m => m.HomeEspecialistaPageModule)
+  },
 
 ];
 
