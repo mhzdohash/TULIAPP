@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'registro-emec',
     loadChildren: () => import('./registro-emec/registro-emec.module').then( m => m.RegistroEmecPageModule)
   },
+  {
+    path: 'home-cliente',
+    loadChildren: () => import('./home-cliente/home-cliente.module').then( m => m.HomeClientePageModule)
+  },
 
 ];
 

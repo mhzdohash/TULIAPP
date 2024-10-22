@@ -21,7 +21,7 @@
   </p>
 
   <div class="container">
-  <ion-item> 
+  <ion-item>
     <ion-label position="center">Curso:</ion-label>
     <ion-select placeholder="Selecione">
       <ion-select-option value="curso1">Instituição de Ensino Superior</ion-select-option>
@@ -113,12 +113,14 @@
   </ion-item>
 </div>
 
- 
+
+
 
 
 <ion-button class="botao" expand="block" color="custom">
-  Enviar solicitação
+  <a class="link-entrar" [routerLink]="['/home-especialista']">Enviar solicitação</a>
 </ion-button>
+
 
   <p class="footer-text">
     Você receberá o retorno por via de um SMS em até 30 dias após solicitação de contato.

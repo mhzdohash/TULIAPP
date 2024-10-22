@@ -1,29 +1,29 @@
 ion-content {
-    --background: #FBF8F4; /* Cor de fundo personalizada */
+    --background: #FBF8F4;
   }
 
   .text-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row; /* Mantém o texto e a imagem lado a lado */
-    margin-top: 60px; /* Ajusta a distância do topo da tela */
-    padding: 20px; /* Adiciona um espaçamento interno horizontal */
+    flex-direction: row;
+    margin-top: 60px;
+    padding: 20px;
   }
 
   .image {
-    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-left: 10px; /* Espaço entre a imagem e o texto */
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
   }
   .center-text {
-    font-size: 60px; /* Tamanho da fonte */
-    font-family: 'Josefin Sans', sans-serif; /* Fonte aplicada */
-    line-height: 1.5; /* Ajuste a altura da linha conforme necessário */
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
     color: #D9B1AD;
-    margin-top: 0; /* Remove qualquer margem padrão que possa empurrar o texto para baixo */
-    padding-top: 20px; /* Ajusta o espaçamento no topo */
-    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: left;
   }
 
   .text-1 {
@@ -48,9 +48,9 @@ ion-content {
   }
 
   .link-text a {
-    color: #595859; /* Cor do link */
-    text-decoration: underline; /* Adiciona sublinhado */
-    cursor: pointer; /* Muda o cursor para mãozinha */
+    color: #595859;
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   .bottom-text {
@@ -63,50 +63,50 @@ ion-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px; /* Espaçamento no topo */
+    padding-top: 20px;
   }
 
   .custom-input, .custom-input2 ion-input {
-    border: none; /* Remove a borda padrão */
-    outline: none; /* Remove o outline (a linha ao redor quando em foco) */
-    box-shadow: none; /* Remove qualquer sombra que possa parecer uma borda */
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 
   .custom-input, .custom-input2 {
-    width: 100%; /* Largura completa */
-    max-width: 300px; /* Largura máxima */
-    background-color: #FFFFFF !important; /* Cor de fundo branca */
+    width: 100%;
+    max-width: 300px;
+    background-color: #FFFFFF !important;
     border-radius: 8px;
     margin-top: 15px;
     color: #000000;
-    border: 1px solid black; /* Mantém uma borda preta externa */
+    border: 1px solid black;
   }
-  
+
   ion-item {
-    --background: #FFFFFF !important; /* Garante que o fundo do ion-item seja branco */
+    --background: #FFFFFF !important;
   }
 
   .botao {
-    width: 80%; /* Diminui o tamanho horizontalmente */
-    min-height: 50px; /* Define uma altura mínima para o botão */
-    height: 30px; /* Define uma altura fixa para o botão */
-    color: white; /* Altera a cor do texto */
-    border-radius: 10px; /* Opção para bordas arredondadas */
-    margin: 0 auto; /* Centraliza o botão horizontalmente */
-    display: block; /* Garante que o botão se comporte como um bloco */
+    width: 80%;
+    min-height: 50px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
     margin-top: 60px;
-    font-size: 20px; /* Tamanho da fonte */
-    line-height: 30px; /* Define a altura da linha para centralizar verticalmente o texto */
-    text-align: center; /* Centraliza o texto */
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
     background-color: #A95858;
     font-family: 'Prompt', sans-serif;
-    
+
   }
 
   .link {
-    color: #595859; /* Cor do link */
-    text-decoration: underline; /* Adiciona sublinhado */
-    cursor: pointer; /* Muda o cursor para mãozinha */
+    color: #595859;
+    text-decoration: underline;
+    cursor: pointer;
   }
 
     .link-entrar{

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -6,12 +6,12 @@ import { NavController } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
   constructor(private navController: NavController) {}
 
   ngOnInit() {
     setTimeout(() => {
-      this.navController.navigateForward('/pagina-tuli'); // Altere para o nome da sua nova página
-    }, 1000); // 3 segundos
+      this.navController.navigateForward('/pagina-tuli');
+    }, 1000);
   }
 }

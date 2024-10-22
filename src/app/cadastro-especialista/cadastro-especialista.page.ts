@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cadastro-especialista.page.html',
   styleUrls: ['./cadastro-especialista.page.scss'],
 })
-export class CadastroEspecialistaPage implements OnInit {
+export class CadastroEspecialistaPage {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+
 
 }

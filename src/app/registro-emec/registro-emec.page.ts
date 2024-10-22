@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro-emec.page.scss'],
 })
 export class RegistroEmecPage {
-  selectedState: string = '';  
-  selectedMunicipality: string = '';  
+  selectedState: string = '';
+  selectedMunicipality: string = '';
   municipalities: string[] = [];
 
   stateMunicipalities: { [key: string]: string[] } = {
@@ -27,7 +28,6 @@ export class RegistroEmecPage {
 
   onStateChange() {
     this.municipalities = this.stateMunicipalities[this.selectedState] || [];
-    this.selectedMunicipality = ''; 
+    this.selectedMunicipality = '';
   }
 }
-  
