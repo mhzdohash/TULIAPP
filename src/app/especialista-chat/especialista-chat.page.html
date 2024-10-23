@@ -1,12 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Chat</ion-title>
-  </ion-toolbar>
+  <div class="text-image-container">
+    <div class="center-text">
+      tuli
+    </div>
+    <img src="assets/icon/Vector 7.png" style="width: 20px; height: 40px;" alt="Descrição da imagem" class="image" />
+  </div>
 </ion-header>
 
 <ion-content>
   <div class="chat-list">
-    <ion-button fill="clear" *ngFor="let chat of chats" class="chat-item" (click)="openChat(chat)">
+    <ion-button fill="clear" *ngFor="let chat of chats" class="chat-item" (click)="abrirChat(chat)">
       <img [src]="chat.image" alt="{{ chat.name }}" class="chat-image" />
       <span class="chat-name">{{ chat.name }}</span>
     </ion-button>
@@ -18,7 +21,7 @@
     <ion-grid>
       <ion-row class="footer-menu">
         <ion-col>
-          <ion-button  fill="clear" color="custom" routerLink="/agenda">
+          <ion-button  fill="clear" color="custom" routerLink="/especialista-calendario">
             <ion-icon name="calendar-outline"></ion-icon>
             Agenda
           </ion-button>

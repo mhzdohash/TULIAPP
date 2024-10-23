@@ -1,0 +1,38 @@
+
+  <ion-header>
+    <div class="text-image-container">
+      <div class="center-text">
+        tuli
+      </div>
+      <img src="assets/icon/Vector 7.png" style="width: 20px; height: 40px;" alt="Descrição da imagem" class="image" />
+    </div>
+  </ion-header>
+
+
+<ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="custom-back-arrow" (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="header-content">
+      <img src="./assets/icon/pexels-vinicius-wiesehofer-289347-1130626.jpg" alt="User Photo" class="user-photo">
+      <div class="user-name">Alice Santos</div>
+    </div>
+  </ion-toolbar>
+</ion-content>
+
+<ion-footer>
+  <div class="chat-footer">
+    <ion-button class="add-button" fill="clear">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-button>
+
+    <ion-input class="message-input" placeholder="Digite sua mensagem"></ion-input>
+
+    <ion-button class="send-button" fill="clear">
+      <ion-icon name="send-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-footer>

@@ -59,6 +59,10 @@ const routes: Routes = [
     path: 'especialista-chat',
     loadChildren: () => import('./especialista-chat/especialista-chat.module').then( m => m.EspecialistaChatPageModule)
   },
+  {
+    path: 'especialista-conversa',
+    loadChildren: () => import('./especialista-conversa/especialista-conversa.module').then( m => m.EspecialistaConversaPageModule)
+  },
 
 
 ];

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-chat',
   templateUrl: './especialista-chat.page.html',
@@ -7,17 +7,19 @@ import { Component } from '@angular/core';
 })
 export class EspecialistaChatPage {
   chats = [
-    { name: 'Alice Santos', image: 'assets/imgs/alice.jpg' },
-    { name: 'Bruno Pereira', image: 'assets/imgs/bruno.jpg' },
-    { name: 'Carlos Souza', image: 'assets/imgs/carlos.jpg' },
-    // Adicione mais chats conforme necessário
+    { name: 'Alice Santos', image: './assets/icon/pexels-vinicius-wiesehofer-289347-1130626.jpg' },
+    { name: 'Bruno Pereira', image: './assets/icon/model-2359322_1280.jpg' },
+    { name: 'Carlos Souza', image: './assets/icon/people-6889599_1280.jpg' },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
-  openChat(chat: any) {
-    // Lógica para abrir o chat específico
-    console.log('Abrindo chat com:', chat.name);
-    // Redirecionar para a página de chat com detalhes da conversa
+  abrirChat(pessoa: any) {
+    this.router.navigate(['/especialista-conversa'], {
+      queryParams: {
+        nome: pessoa.nome,
+        foto: pessoa.foto
+      }
+    });
   }
 }
