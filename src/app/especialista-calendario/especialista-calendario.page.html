@@ -1,17 +1,37 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      <img src="assets/icon/Vector 7" alt="tuli logo" class="logo">
+      <img src="assets/icon/tuli-logo.png" alt="tuli logo" class="logo">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-calendar [(ngModel)]="selectedDates" (change)="onDateChange($event)">
-  </ion-calendar>
+  <div class="calendar-grid">
+    <div class="calendar-header">
+      <ion-button fill="clear" (click)="prevMonth()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+      <div class="month-year">{{ monthNames[currentMonth] }} {{ currentYear }}</div>
+      <ion-button fill="clear" (click)="nextMonth()">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="calendar-days">
+      <div class="day-name" *ngFor="let day of dayNames">{{ day }}</div>
+      <div
+        class="day-cell"
+        *ngFor="let day of calendarDays"
+        [class.today]="day.isToday"
+        [class.selected]="day.isSelected"
+        (click)="selectDate(day)">
+        {{ day.date }}
+      </div>
+    </div>
+  </div>
 
   <div class="legend">
-    <ion-item>
+    <ion-item lines="3">
       <ion-label>
         <ion-badge color="custom">Indisponível</ion-badge>
       </ion-label>
@@ -24,25 +44,27 @@
 
 <ion-footer>
   <ion-toolbar>
-    <ion-row class="footer-menu">
-      <ion-col>
-        <ion-button fill="clear" color="custom" routerLink="/agenda">
-          <ion-icon name="calendar-outline"></ion-icon>
-          Agenda
-        </ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button fill="clear" color="custom" routerLink="/chat">
-          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-          Chat
-        </ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button fill="clear" color="custom" routerLink="/perfil">
-          <ion-icon name="person-outline"></ion-icon>
-          Perfil
-        </ion-button>
-      </ion-col>
-    </ion-row>
+    <ion-grid>
+      <ion-row class="footer-menu">
+        <ion-col>
+          <ion-button fill="clear" color="custom" routerLink="/agenda">
+            <ion-icon name="calendar-outline"></ion-icon>
+            Agenda
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" color="custom" routerLink="/chat">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            Chat
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" color="custom" routerLink="/perfil">
+            <ion-icon name="person-outline"></ion-icon>
+            Perfil
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-footer>
