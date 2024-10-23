@@ -12,7 +12,7 @@ export class HomeEspecialistaPage implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      this.navController.navigateForward('/cadastro');
+      this.navController.navigateForward('/especialista-calendario');
     }, 1000);
 
 }

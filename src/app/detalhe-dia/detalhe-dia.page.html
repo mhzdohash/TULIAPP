@@ -1,0 +1,33 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="custom-back-arrow" (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <span class="date-header">4 de novembro de 2024</span>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <!-- Título de Compromissos com botão de salvar -->
+  <div class="compromissos-header">
+    <span>Compromissos</span>
+    <ion-button fill="clear" class="save-button" (click)="saveCompromissos()">
+      <ion-icon name="save-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <!-- Lista de horários com caixas de texto ao lado -->
+  <div class="horarios-container">
+    <div class="horario-item" *ngFor="let horario of horarios">
+      <span>{{ horario }}</span>
+      <ion-input [(ngModel)]="compromissos[horario]" placeholder="Adicionar compromisso"></ion-input>
+    </div>
+  </div>
+</ion-content>

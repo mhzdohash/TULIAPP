@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Chat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="chat-list">
+    <ion-button fill="clear" *ngFor="let chat of chats" class="chat-item" (click)="openChat(chat)">
+      <img [src]="chat.image" alt="{{ chat.name }}" class="chat-image" />
+      <span class="chat-name">{{ chat.name }}</span>
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="footer-menu">
+        <ion-col>
+          <ion-button  fill="clear" color="custom" routerLink="/agenda">
+            <ion-icon name="calendar-outline"></ion-icon>
+            Agenda
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="chat" fill="clear" color="custom" routerLink="/especialista-chat">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            Chat
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" color="custom" routerLink="/perfil">
+            <ion-icon name="person-outline"></ion-icon>
+            Perfil
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

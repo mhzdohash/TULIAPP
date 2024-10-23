@@ -1,17 +1,33 @@
 ion-content {
   --background: #FBF8F4;
-}
-
-.logo {
-  height: 40px;
-  margin-left: 10px;
-}
-
-.calendar-grid {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
+
+.text-image-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.image {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+  }
+  .center-text {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    color: #D9B1AD;
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+  }
 
 .calendar-header {
   display: flex;
@@ -63,20 +79,55 @@ ion-content {
   color: #FFFFFF;
 }
 
-.legend {
+
+.legendas-container {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.legenda-item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.circulo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.indisponivel {
+  background-color: #E2C1BD;
+}
+
+.disponivel {
+  background-color: #FFFFFF;
+  border: 1px solid #555;
+}
+
+.folga {
+  background-color: #9B4640;
+}
+
+ion-footer {
+  --background: #FAE5E1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-menu {
   justify-content: space-around;
   text-align: center;
   font-size: 12px;
-}
-
-ion-footer {
-  --background: #FAE5E1;
+  color: #A95858;
 }
 
 ion-button {
@@ -89,4 +140,8 @@ ion-button {
 
 ion-icon {
   font-size: 20px;
+}
+
+.agenda{
+  color: #A95858;
 }

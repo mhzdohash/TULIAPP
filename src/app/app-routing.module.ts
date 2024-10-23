@@ -11,7 +11,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-   
+
   {
     path: 'pagina-tuli',
     loadChildren: () => import('./pagina-tuli/pagina-tuli.module').then( m => m.PaginaTuliPageModule)
@@ -31,7 +31,8 @@ const routes: Routes = [
   {
     path: 'cadastro-cliente',
     loadChildren: () => import('./cadastro-cliente/cadastro-cliente.module').then( m => m.CadastroClientePageModule)
-  },  {
+  },
+  {
     path: 'cadastro-especialista',
     loadChildren: () => import('./cadastro-especialista/cadastro-especialista.module').then( m => m.CadastroEspecialistaPageModule)
   },
@@ -51,6 +52,14 @@ const routes: Routes = [
     path: 'especialista-calendario',
     loadChildren: () => import('./especialista-calendario/especialista-calendario.module').then( m => m.EspecialistaCalendarioPageModule)
   },
+  {
+    path: 'detalhe-dia',
+    loadChildren: () => import('./detalhe-dia/detalhe-dia.module').then(m => m.DetalheDiaPageModule)
+  },  {
+    path: 'especialista-chat',
+    loadChildren: () => import('./especialista-chat/especialista-chat.module').then( m => m.EspecialistaChatPageModule)
+  },
+
 
 ];
 

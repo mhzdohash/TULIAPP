@@ -1,9 +1,10 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      <img src="assets/icon/tuli-logo.png" alt="tuli logo" class="logo">
-    </ion-title>
-  </ion-toolbar>
+  <div class="text-image-container">
+    <div class="center-text">
+      tuli
+    </div>
+    <img src="assets/icon/Vector 7.png" style="width: 20px; height: 40px;" alt="Descrição da imagem" class="image" />
+  </div>
 </ion-header>
 
 <ion-content>
@@ -24,36 +25,43 @@
         *ngFor="let day of calendarDays"
         [class.today]="day.isToday"
         [class.selected]="day.isSelected"
+        [class.indisponivel]="day.isUnavailable"
         (click)="selectDate(day)">
         {{ day.date }}
       </div>
     </div>
   </div>
-
-  <div class="legend">
-    <ion-item lines="3">
-      <ion-label>
-        <ion-badge color="custom">Indisponível</ion-badge>
-      </ion-label>
-      <ion-label>
-        <ion-badge color="light">Disponível</ion-badge>
-      </ion-label>
-    </ion-item>
+  <div class="legendas-container">
+    <div class="legenda-item">
+      <span class="circulo indisponivel"></span>
+      <span>Indisponível</span>
+    </div>
+    <div class="legenda-item">
+      <span class="circulo disponivel"></span>
+      <span>Disponível</span>
+    </div>
+    <div class="legenda-item">
+      <span class="circulo folga"></span>
+      <span>Folga</span>
+    </div>
   </div>
+
 </ion-content>
+
+
 
 <ion-footer>
   <ion-toolbar>
     <ion-grid>
       <ion-row class="footer-menu">
         <ion-col>
-          <ion-button fill="clear" color="custom" routerLink="/agenda">
+          <ion-button class="agenda" fill="clear" color="custom" routerLink="/agenda">
             <ion-icon name="calendar-outline"></ion-icon>
             Agenda
           </ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" color="custom" routerLink="/chat">
+          <ion-button fill="clear" color="custom" routerLink="/especialista-chat">
             <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
             Chat
           </ion-button>
