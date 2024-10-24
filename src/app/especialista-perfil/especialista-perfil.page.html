@@ -1,0 +1,76 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<ion-header>
+  <div class="text-image-container">
+    <div class="center-text">
+      tuli
+    </div>
+    <img src="assets/icon/Vector 7.png" style="width: 20px; height: 40px;" alt="Descrição da imagem" class="image" />
+  </div>
+</ion-header>
+
+<ion-content *ngIf="especialista">
+  <!-- Imagem de fundo -->
+  <div class="background-image">
+    <img src="./assets/icon/background.jpeg" alt="Imagem de Fundo" class="background">
+  </div>
+
+  <!-- Foto de perfil centralizada -->
+  <div class="profile-container">
+    <img src="../assets/icon/Foto-doutora-Ana-Elisa.jpg" alt="Foto de Perfil" class="profile-picture">
+  </div>
+
+  <!-- Nome e botão de edição -->
+  <div class="profile-info">
+    <span class="name">{{ especialista.nome }}</span>
+    <ion-button fill="clear" class="edit-button" routerLink="/especialista-editar-perfil">
+      <ion-icon name="create-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <!-- Descrição -->
+  <div class="description">
+    <p>{{ especialista.descricao }}</p>
+  </div>
+
+  <!-- Procedimentos já realizados -->
+  <div class="procedures">
+    <h2 style="color:#A95858; font-family:'Josefin Sans', sans-serif; margin-top: -20px">Procedimentos já realizados</h2>
+
+    <div class="procedure-box" *ngFor="let procedimento of especialista.procedimentos">
+      <h3>{{ procedimento.titulo }}</h3>
+      <p>{{ procedimento.descricao }}</p>
+    </div>
+  </div>
+</ion-content>
+
+<div class="altura"></div>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="footer-menu">
+        <ion-col>
+          <ion-button fill="clear" color="custom" routerLink="/especialista-calendario">
+            <ion-icon name="calendar-outline"></ion-icon>
+            Agenda
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="chat" fill="clear" color="custom" routerLink="/especialista-chat">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            Chat
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="perfil" fill="clear" color="custom" routerLink="/especialista-perfil">
+            <ion-icon name="person-outline"></ion-icon>
+            Perfil
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

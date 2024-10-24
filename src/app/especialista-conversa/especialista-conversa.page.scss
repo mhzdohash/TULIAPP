@@ -28,9 +28,9 @@
   }
 
   .custom-back-arrow ion-icon {
-    font-size: 30px;
+    font-size: 25px;
     color: #D9B1AD;
-    padding-top: 20px;
+    padding-top: 0px;
   }
 
 .user-photo {
@@ -45,7 +45,9 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-
+padding-top: 10px;
+font-family: 'Josefin Sans', sans-serif;
+gap: 10px 0px;
 }
 .user-name {
   font-size: 20px;
@@ -64,35 +66,40 @@ ion-toolbar {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: #FAE5E1;
+  background-color: #fbfbfb;
 }
 
+
 .add-button {
-  --background: #FAE5E1;
-  --color: #A95858;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  --background: #D9B1AD;
+  --color: #fbfbfb;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
+
 
 .message-input {
   flex-grow: 1;
-  margin: 0 10px;
+  margin: 10px;
   --background: #FFFFFF;
   --color: #595859;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 50%;
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .send-button {
-  --background: #FAE5E1;
-  --color: #A95858;
+  color: #A95858;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
 }

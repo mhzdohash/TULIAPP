@@ -1,0 +1,73 @@
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<ion-content>
+
+  <ion-toolbar class="back">
+  <ion-buttons slot="start">
+    <ion-back-button text="" defaultHref="/especialista-perfil"></ion-back-button>
+  </ion-buttons>
+  <ion-title class="edit">Editar perfil</ion-title>
+</ion-toolbar>
+
+  <div class="container">
+    <!-- Imagem de perfil -->
+    <div class="profile-image-container">
+      <div class="profile-image"></div>
+    </div>
+
+    <!-- Campos de edição -->
+    <ion-list>
+      <!-- Nome -->
+      <ion-item>
+        <ion-label position="stacked" class="label">Nome</ion-label>
+        <ion-input class="descricao" [(ngModel)]="especialista.nome"></ion-input>
+      </ion-item>
+
+      <!-- Descrição -->
+      <ion-item>
+        <ion-label position="stacked" class="label">Descrição</ion-label>
+        <ion-textarea class="descricao"  [(ngModel)]="especialista.descricao"></ion-textarea>
+      </ion-item>
+
+      <!-- Gênero -->
+      <ion-item>
+        <ion-label position="stacked" class="label">Gênero</ion-label>
+        <ion-select class="descricao" [(ngModel)]="especialista.genero">
+          <ion-select-option value="Feminino">Feminino</ion-select-option>
+          <ion-select-option value="Masculino">Masculino</ion-select-option>
+          <ion-select-option value="Outro">Outro</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <!-- Procedimentos -->
+    <div class="procedures-section">
+      <h2 class="section-title">Procedimentos</h2>
+      <ion-button expand="block" (click)="adicionarProcedimento()">
+        Adicionar procedimento
+      </ion-button>
+    </div>
+
+
+    <div *ngFor="let procedimento of especialista.procedimentos; let i = index" class="procedure-item">
+      <ion-item class="texto">
+        <ion-label position="stacked" class="label">{{ procedimento.titulo }}</ion-label>
+        <ion-textarea class="label2" [(ngModel)]="procedimento.descricao"></ion-textarea>
+      </ion-item>
+      <ion-button fill="clear" color="danger" (click)="removerProcedimento(i)">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </div>
+
+      <div class="salvar">
+        <ion-button expand="block" (click)="salvarAlteracoes()">
+          Salvar alterações
+        </ion-button>
+      </div>
+    </div>
+
+</ion-content>
+
+

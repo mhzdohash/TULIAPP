@@ -1,0 +1,111 @@
+.back{
+ color: #A95858;
+}
+
+.edit{
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.container {
+  padding: 15px;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+.profile-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #d9b1ad;
+  border: 4px solid #fae5e1;
+}
+
+.label {
+  font-size: 19px;
+  color: #A95858;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.label2 {
+  font-size: 15px;
+  color: #595859;
+  font-family: 'Prompt', sans-serif;
+}
+
+.descricao{
+  font-size: 15px;
+  font-family: 'Prompt', sans-serif;
+}
+
+.procedures-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  align-items: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #A95858;
+  margin-bottom: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+.procedure-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 100%;
+
+}
+
+.texto{
+  width: 100%;
+  margin-top: 30px;
+}
+ion-button {
+  align-items: center;
+  --background: #D9B1AD;
+  --color: #FBF8F4;
+  border: none;
+  width: 70%;
+  height: 70%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+
+}
+
+ion-back-button {
+  color: #A95858;
+}
+
+.salvar{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.salvar ion-button{
+  align-items: center;
+  --background: #A95858 ;
+  --color: #FBF8F4;
+  border: none;
+  width: 50%;
+  height: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+}
+

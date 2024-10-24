@@ -63,6 +63,14 @@ const routes: Routes = [
     path: 'especialista-conversa',
     loadChildren: () => import('./especialista-conversa/especialista-conversa.module').then( m => m.EspecialistaConversaPageModule)
   },
+  {
+    path: 'especialista-perfil',
+    loadChildren: () => import('./especialista-perfil/especialista-perfil.module').then( m => m.EspecialistaPerfilPageModule)
+  },
+  {
+    path: 'especialista-editar-perfil',
+    loadChildren: () => import('./especialista-editar-perfil/especialista-editar-perfil.module').then( m => m.EspecialistaEditarPerfilPageModule)
+  },
 
 
 ];
