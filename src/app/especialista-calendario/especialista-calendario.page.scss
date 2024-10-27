@@ -138,10 +138,13 @@ ion-button {
   color: #D9B1AD;
 }
 
-ion-icon {
-  font-size: 20px;
-}
 
-.agenda{
+.agenda {
   color: #A95858;
 }
+
+ion-button ion-icon {
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+

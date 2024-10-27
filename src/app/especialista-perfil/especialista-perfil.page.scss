@@ -125,14 +125,14 @@ ion-content {
     bottom: 0;
     width: 100%;
   }
-
+  
   .footer-menu {
     justify-content: space-around;
     text-align: center;
     font-size: 12px;
     color: #A95858;
   }
-
+  
   ion-button {
     display: flex;
     flex-direction: column;
@@ -140,14 +140,17 @@ ion-content {
     align-items: center;
     color: #D9B1AD;
   }
-
-  ion-icon {
-    font-size: 20px;
-  }
-
+  
+  
   .perfil {
     color: #A95858;
   }
+  
+  ion-button ion-icon {
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+  
 
 
   .altura{

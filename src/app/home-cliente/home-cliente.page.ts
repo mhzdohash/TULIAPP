@@ -12,7 +12,7 @@ export class HomeClientePage implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      this.navController.navigateForward('/cadastro');
+      this.navController.navigateForward('/cliente-casa');
     }, 1000);
 
 }

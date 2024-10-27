@@ -71,6 +71,22 @@ const routes: Routes = [
     path: 'especialista-editar-perfil',
     loadChildren: () => import('./especialista-editar-perfil/especialista-editar-perfil.module').then( m => m.EspecialistaEditarPerfilPageModule)
   },
+  {
+    path: 'cliente-casa',
+    loadChildren: () => import('./cliente-casa/cliente-casa.module').then( m => m.ClienteCasaPageModule)
+  },
+  {
+    path: 'cliente-chat',
+    loadChildren: () => import('./cliente-chat/cliente-chat.module').then( m => m.ClienteChatPageModule)
+  },
+  {
+    path: 'cliente-conversa',
+    loadChildren: () => import('./cliente-conversa/cliente-conversa.module').then( m => m.ClienteConversaPageModule)
+  },
+  {
+    path: 'cliente-produtos',
+    loadChildren: () => import('./cliente-produtos/cliente-produtos.module').then( m => m.ClienteProdutosPageModule)
+  },
 
 
 ];
