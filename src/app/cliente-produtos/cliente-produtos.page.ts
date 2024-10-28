@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface Produto {
   nome: string;
@@ -16,31 +16,31 @@ interface Categoria {
   templateUrl: './cliente-produtos.page.html',
   styleUrls: ['./cliente-produtos.page.scss'],
 })
-export class ClienteProdutosPage implements OnInit {
+export class ClienteProdutosPage  {
 
   categorias: Categoria[] = [
     {
       nome: 'Cintas',
       slideIndex: 0,
       produtos: [
-        { nome: 'Cinta Modeladora', imagem: 'assets/produtos/cinta1.jpg' },
-        { nome: 'Cinta Pós-Cirúrgica', imagem: 'assets/produtos/cinta2.jpg' },
-        { nome: 'Cinta Abdômen', imagem: 'assets/produtos/cinta3.jpg' },
+        { nome: 'Cinta Modeladora', imagem: 'assets/icon/cintamodeladora.jpg' },
+        { nome: 'Cinta Pós-Cirúrgica', imagem: 'assets/icon/Colete-Pos-Cirurgico.jpg' },
+        { nome: 'Cinta Abdômen', imagem: 'assets/icon/cintaabdomen.jpg' },
       ]
     },
     {
       nome: 'Pomadas',
       slideIndex: 0,
       produtos: [
-        { nome: 'Pomada Cicatrizante', imagem: 'assets/produtos/pomada1.jpg' },
-        { nome: 'Pomada Hidratante', imagem: 'assets/produtos/pomada2.jpg' },
+        { nome: 'Pomada Cicatrizante', imagem: 'assets/icon/pomadacicatrizante.png' },
+        { nome: 'Pomada Hidratante', imagem: 'assets/icon/cremehidratante.jpg' },
       ]
     }
   ];
 
   constructor() { }
 
-  ngOnInit() { }
+
 
   anterior(categoria: Categoria) {
     if (categoria.slideIndex > 0) {

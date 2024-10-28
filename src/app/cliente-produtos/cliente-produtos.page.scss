@@ -5,14 +5,14 @@ ion-content {
     justify-content: space-between;
     height: 100%;
   }
-  
+
   .text-image-container {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
   }
-  
+
   .image {
       width: 100px;
       height: auto;
@@ -28,35 +28,48 @@ ion-content {
       text-align: left;
       margin-left: 20px;
     }
-  
+
     .carousel-container {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+
       }
       .nomeProduto{
-        
+        font-size: 18px;
+        font-family: 'Prompt', sans-serif;
+
+        color: #A95858;
       }
-      
+      .nomeCategoria{
+        font-size: 30px;
+        font-family: 'Prompt', sans-serif;
+        padding-left: 20px;
+        color: #A95858;
+      }
+
       .carousel-slide {
         display: flex;
         overflow: hidden;
         width: 70%;
       }
-      
+
       ion-card {
         flex: 0 0 100%;
         display: none;
         transition: transform 0.5s ease;
+
       }
-      
+
       ion-card.active {
         display: block;
+
       }
-      
+
       .nav-button {
         font-size: 1.5rem;
+
       }
       ion-footer {
         --background: #FAE5E1;
@@ -64,14 +77,14 @@ ion-content {
         bottom: 0;
         width: 100%;
       }
-      
+
       .footer-menu {
         justify-content: space-around;
         text-align: center;
         font-size: 12px;
         color: #A95858;
       }
-      
+
       ion-button {
         display: flex;
         flex-direction: column;
@@ -79,14 +92,17 @@ ion-content {
         align-items: center;
         color: #D9B1AD;
       }
-      
-      
+
+
       .produto{
         color: #A95858;
       }
-      
+
       ion-button ion-icon {
         font-size: 30px;
         margin-bottom: 4px;
       }
-      
+
+      .altura{
+        height: 70px;
+      }

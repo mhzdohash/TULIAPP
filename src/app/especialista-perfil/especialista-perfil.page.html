@@ -12,17 +12,15 @@
 </ion-header>
 
 <ion-content *ngIf="especialista">
-  <!-- Imagem de fundo -->
+
   <div class="background-image">
     <img src="./assets/icon/background.jpeg" alt="Imagem de Fundo" class="background">
   </div>
 
-  <!-- Foto de perfil centralizada -->
   <div class="profile-container">
     <img src="../assets/icon/Foto-doutora-Ana-Elisa.jpg" alt="Foto de Perfil" class="profile-picture">
   </div>
 
-  <!-- Nome e botão de edição -->
   <div class="profile-info">
     <span class="name">{{ especialista.nome }}</span>
     <ion-button fill="clear" class="edit-button" routerLink="/especialista-editar-perfil">
@@ -30,12 +28,10 @@
     </ion-button>
   </div>
 
-  <!-- Descrição -->
   <div class="description">
     <p>{{ especialista.descricao }}</p>
   </div>
 
-  <!-- Procedimentos já realizados -->
   <div class="procedures">
     <h2 style="color:#A95858; font-family:'Josefin Sans', sans-serif; margin-top: -20px">Procedimentos já realizados</h2>
 

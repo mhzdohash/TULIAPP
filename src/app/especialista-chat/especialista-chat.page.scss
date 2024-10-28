@@ -38,7 +38,7 @@ ion-content {
 
 .chat-item {
   display: flex;
-  align-items: center;  /* Centraliza verticalmente o conteúdo */
+  align-items: center;
   justify-content: flex-start;
   margin-bottom: 15px;
   width: 100%;
@@ -56,9 +56,10 @@ ion-content {
   font-size: 18px;
   font-weight: 500;
   color: #595859;
-  flex-grow: 1; /* O nome ocupará o espaço restante, mantendo-o à esquerda do item */
+  flex-grow: 1;
   display: flex;
-  align-items: center; /* Centraliza verticalmente o texto */
+  align-items: center;
+
 }
 
 ion-button {
