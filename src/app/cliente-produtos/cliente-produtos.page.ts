@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Produto {
   nome: string;
@@ -16,7 +17,7 @@ interface Categoria {
   templateUrl: './cliente-produtos.page.html',
   styleUrls: ['./cliente-produtos.page.scss'],
 })
-export class ClienteProdutosPage  {
+export class ClienteProdutosPage {
 
   categorias: Categoria[] = [
     {
@@ -38,9 +39,7 @@ export class ClienteProdutosPage  {
     }
   ];
 
-  constructor() { }
-
-
+  constructor(private router: Router) { }
 
   anterior(categoria: Categoria) {
     if (categoria.slideIndex > 0) {
@@ -56,5 +55,10 @@ export class ClienteProdutosPage  {
     } else {
       categoria.slideIndex = 0;
     }
+  }
+
+  // Método para redirecionar para a página de compra
+  comprarProduto(produto: Produto) {
+    this.router.navigate(['/compra', { produtoNome: produto.nome }]);
   }
 }

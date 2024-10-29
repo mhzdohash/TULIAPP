@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="custom-back-arrow" (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="produto-container">
+    <img [src]="produtoImagem" alt="{{ produtoNome }}" class="produto-imagem" />
+    <h2 class="produto-nome">{{ produtoNome }}</h2>
+    <p class="produto-preco">R$ {{ produtoPreco }}</p>
+    <h3 class="descricao-titulo">Descrição do Produto</h3>
+    <p class="produto-descricao">{{ produtoDescricao }}</p>
+
+    <ion-button expand="block" class="comprar-button" color="custom">
+      Comprar
+    </ion-button>
+  </div>
+</ion-content>

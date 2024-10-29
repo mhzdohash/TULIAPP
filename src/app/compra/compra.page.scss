@@ -1,0 +1,72 @@
+.custom-back-arrow {
+  position: absolute;
+  left: 5px;
+  z-index: 10;
+  font-size: 24px;
+}
+
+.custom-back-arrow ion-icon {
+  font-size: 25px;
+  color: #D9B1AD;
+  padding-top: 0px;
+}
+
+.produto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Prompt', sans-serif;
+}
+
+.produto-imagem {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #e8d2cf; /* Mesma cor do exemplo */
+  border-radius: 8px;
+}
+
+.produto-nome {
+  font-size: 1.3em;
+  margin-top: 15px;
+  color: #4a4a4a;
+  font-weight: 500;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.produto-preco {
+  font-size: 1.5em;
+  color: #A95858;
+  margin: 10px 0;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.descricao-titulo {
+  font-size: 1.2em;
+  color: #A95858;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.produto-descricao {
+  font-size: 1.1em;
+  color: #4a4a4a;
+  padding: 0 10px;
+  line-height: 1.4;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.comprar-button {
+  background-color: #A95858;
+  color: white;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 10%;
+  width: 80%;
+  font-size: 18px;
+}

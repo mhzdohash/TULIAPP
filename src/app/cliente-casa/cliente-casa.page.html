@@ -1,4 +1,6 @@
-
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
 <ion-header>
   <div class="text-image-container">
     <div class="center-text">
@@ -11,16 +13,28 @@
 <ion-content>
   <ion-toolbar>
     <div class="search-bar-container">
-      <ion-searchbar mode="ios" placeholder="Pesquisar" showCancelButton="never" animated>
+      <ion-searchbar mode="ios" placeholder="Pesquisar..." showCancelButton="never" animated>
         <ion-icon slot="start"></ion-icon>
       </ion-searchbar>
     </div>
   </ion-toolbar>
 
-</ion-content>
-
-
-
+  <ion-content>
+    <div class="profissional-lista">
+      <div *ngFor="let profissional of profissionais" class="profissional-card">
+        <div class="perfil-container" (click)="verDetalhes(profissional)">
+          <img [src]="profissional.foto" alt="{{ profissional.nome }}" class="foto-perfil" />
+          <div class="info-profissional">
+            <h2 class="nome-profissional">{{ profissional.nome }}</h2>
+            <p class="descricao-profissional">{{ profissional.descricao }}</p>
+            <div class="estrela-container">
+              <ion-icon name="star" *ngFor="let star of estrelas" class="estrela-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
 
 <ion-footer>
   <ion-toolbar>

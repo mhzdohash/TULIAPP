@@ -1,0 +1,50 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="custom-back-arrow" (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="detalhes-profissional-container">
+    <!-- Informações principais do profissional -->
+    <div class="perfil-info">
+      <img [src]="profissionalFoto" alt="{{ profissionalNome }}" class="foto-perfil" />
+      <h2 class="nome-profissional">{{ profissionalNome }}</h2>
+      <p class="descricao-profissional">{{ profissionalDescricao }}</p>
+      <div class="estrela-container1">
+        <ion-icon name="star" *ngFor="let star of estrelas" class="estrela-icon"></ion-icon>
+      </div>
+      <div class="botao">
+      <ion-button expand="block" class="mensagem-button" color="custom">
+        Enviar Mensagem
+      </ion-button>
+    </div>
+    </div>
+
+    <!-- Feedback dos clientes -->
+    <div class="feedback-section">
+      <h3 class="Feedback-h3">Feedback</h3>
+      <div *ngFor="let feedback of feedbacks" class="feedback-card">
+        <div class="feedback-info">
+          <img [src]="feedback.foto" alt="{{ feedback.nome }}" class="foto-feedback" />
+          <div class="feedback-detalhes">
+            <h4>{{ feedback.nome }}</h4>
+          </div>
+          <div class="estrela-container">
+            <div class="data-doFeedback">
+            <ion-icon name="star" *ngFor="let star of feedback.estrelas" class="estrela-icon"></ion-icon>
+          </div>
+              <p class="feedback-data">{{ feedback.data }}</p>
+          </div>
+        </div>
+        <p class="feedback-texto">{{ feedback.texto }}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

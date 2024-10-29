@@ -55,7 +55,8 @@ const routes: Routes = [
   {
     path: 'detalhe-dia',
     loadChildren: () => import('./detalhe-dia/detalhe-dia.module').then(m => m.DetalheDiaPageModule)
-  },  {
+  },
+  {
     path: 'especialista-chat',
     loadChildren: () => import('./especialista-chat/especialista-chat.module').then( m => m.EspecialistaChatPageModule)
   },
@@ -86,6 +87,14 @@ const routes: Routes = [
   {
     path: 'cliente-produtos',
     loadChildren: () => import('./cliente-produtos/cliente-produtos.module').then( m => m.ClienteProdutosPageModule)
+  },
+  {
+    path: 'compra',
+    loadChildren: () => import('./compra/compra.module').then( m => m.CompraPageModule)
+  },
+  {
+    path: 'detalhes-profissional/:id',
+    loadChildren: () => import('./detalhes-profissional/detalhes-profissional.module').then( m => m.DetalhesProfissionalPageModule)
   },
 
 

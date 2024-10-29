@@ -21,7 +21,10 @@
       </ion-button>
 
       <div class="carousel-slide">
-        <ion-card *ngFor="let produto of categoria.produtos; let i = index" [class.active]="i === categoria.slideIndex">
+        <!-- Tornamos o primeiro produto de cada categoria clicável para abrir a página de compra -->
+        <ion-card *ngFor="let produto of categoria.produtos; let i = index"
+                  [class.active]="i === categoria.slideIndex"
+                  (click)="i === 0 ? comprarProduto(produto) : null"> <!-- Clique só no primeiro produto -->
           <img [src]="produto.imagem" alt="{{ produto.nome }}" />
           <ion-card-content>
             <h3 class="nomeProduto">{{ produto.nome }}</h3>
@@ -49,7 +52,7 @@
           </ion-button>
         </ion-col>
         <ion-col>
-          <ion-button   fill="clear" color="custom" routerLink="/cliente-chat">
+          <ion-button fill="clear" color="custom" routerLink="/cliente-chat">
             <ion-icon name="chatbubble-outline"></ion-icon>
             <span></span>
           </ion-button>
