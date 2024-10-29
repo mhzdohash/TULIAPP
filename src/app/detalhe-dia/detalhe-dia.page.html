@@ -15,7 +15,6 @@
 
 
 <ion-content>
-  <!-- Título de Compromissos com botão de salvar -->
   <div class="compromissos-header">
     <span>Compromissos</span>
     <ion-button fill="clear" class="save-button" (click)="saveCompromissos()">
@@ -23,7 +22,6 @@
     </ion-button>
   </div>
 
-  <!-- Lista de horários com caixas de texto ao lado -->
   <div class="horarios-container">
     <div class="horario-item" *ngFor="let horario of horarios">
       <span>{{ horario }}</span>

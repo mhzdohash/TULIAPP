@@ -57,7 +57,6 @@ export class ClienteProdutosPage {
     }
   }
 
-  // Método para redirecionar para a página de compra
   comprarProduto(produto: Produto) {
     this.router.navigate(['/compra', { produtoNome: produto.nome }]);
   }

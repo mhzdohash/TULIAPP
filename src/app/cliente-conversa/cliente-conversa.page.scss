@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: row;
   }
-  
+
   .image {
       width: 100px;
       height: auto;
@@ -26,13 +26,13 @@
       z-index: 10;
       font-size: 24px;
     }
-  
+
     .custom-back-arrow ion-icon {
       font-size: 25px;
       color: #D9B1AD;
       padding-top: 0px;
     }
-  
+
   .user-photo {
     width: 60px;
     height: 60px;
@@ -40,7 +40,7 @@
     object-fit: cover;
     align-items: center;
   }
-  
+
   .header-content{
   display: flex;
   flex-direction: column;
@@ -54,13 +54,12 @@
     font-weight: bold;
     color: #595859;
   }
-  
+
   ion-toolbar {
     display: flex;
     align-items: center;
   }
-  
-  /* Estilo para o rodapé do chat */
+
   .chat-footer {
     display: flex;
     align-items: center;
@@ -68,8 +67,8 @@
     padding: 10px;
     background-color: #fbfbfb;
   }
-  
-  
+
+
   .add-button {
     --background: #D9B1AD;
     --color: #fbfbfb;
@@ -79,10 +78,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
   }
-  
-  
+
+
   .message-input {
     flex-grow: 1;
     margin: 10px;
@@ -94,7 +93,7 @@
     font-size: 14px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .send-button {
     color: #A95858;
     display: flex;
@@ -103,4 +102,3 @@
     width: 24px;
     height: 24px;
   }
-  

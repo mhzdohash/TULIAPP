@@ -19,7 +19,7 @@ export class EspecialistaEditarPerfilPage implements OnInit {
   constructor(private router: Router, private especialistaService: EspecialistaService) {}
 
   ngOnInit() {
-    this.especialista = this.especialistaService.getPerfil(); // Obtém o perfil atual
+    this.especialista = this.especialistaService.getPerfil();
   }
 
   adicionarProcedimento() {
@@ -36,6 +36,6 @@ export class EspecialistaEditarPerfilPage implements OnInit {
 
   salvarAlteracoes() {
     this.especialistaService.salvarAlteracoes(this.especialista);
-    this.router.navigate(['/especialista-perfil']); // Volta para a página de perfil
+    this.router.navigate(['/especialista-perfil']);
   }
 }

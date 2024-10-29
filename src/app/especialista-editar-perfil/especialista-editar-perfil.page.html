@@ -12,26 +12,22 @@
 </ion-toolbar>
 
   <div class="container">
-    <!-- Imagem de perfil -->
+
     <div class="profile-image-container">
       <div class="profile-image"></div>
     </div>
 
-    <!-- Campos de edição -->
     <ion-list>
-      <!-- Nome -->
       <ion-item>
         <ion-label position="stacked" class="label">Nome</ion-label>
         <ion-input class="descricao" [(ngModel)]="especialista.nome"></ion-input>
       </ion-item>
 
-      <!-- Descrição -->
       <ion-item>
         <ion-label position="stacked" class="label">Descrição</ion-label>
         <ion-textarea class="descricao"  [(ngModel)]="especialista.descricao"></ion-textarea>
       </ion-item>
 
-      <!-- Gênero -->
       <ion-item>
         <ion-label position="stacked" class="label">Gênero</ion-label>
         <ion-select class="descricao" [(ngModel)]="especialista.genero">
@@ -42,7 +38,6 @@
       </ion-item>
     </ion-list>
 
-    <!-- Procedimentos -->
     <div class="procedures-section">
       <h2 class="section-title">Procedimentos</h2>
       <ion-button expand="block" (click)="adicionarProcedimento()">

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'; // Importar Router para navegação
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-especialista-calendario',
@@ -14,10 +14,10 @@ export class EspecialistaCalendarioPage implements OnInit {
   calendarDays: any[] = [];
   selectedDates: Date[] = [];
 
-  // Lista de dias indisponíveis
+
   unavailableDays = [4, 5, 6, 9, 12, 15, 17, 20, 25, 28];
 
-  constructor(private router: Router) { } // Injeção de dependência do Router
+  constructor(private router: Router) { }
 
   ngOnInit() {
     const today = new Date();
@@ -31,12 +31,10 @@ export class EspecialistaCalendarioPage implements OnInit {
     const firstDay = new Date(year, month, 1).getDay();
     const numDays = new Date(year, month + 1, 0).getDate();
 
-    // Preenche dias vazios antes do primeiro dia do mês
     for (let i = 0; i < firstDay; i++) {
       this.calendarDays.push({ date: null });
     }
 
-    // Preenche os dias do mês
     for (let i = 1; i <= numDays; i++) {
       const date = new Date(year, month, i);
       this.calendarDays.push({
@@ -44,7 +42,7 @@ export class EspecialistaCalendarioPage implements OnInit {
         fullDate: date,
         isToday: this.isToday(date),
         isSelected: this.isDateSelected(date),
-        isUnavailable: this.unavailableDays.includes(i) // Verifica se o dia está na lista de indisponíveis
+        isUnavailable: this.unavailableDays.includes(i)
       });
     }
   }
@@ -60,8 +58,7 @@ export class EspecialistaCalendarioPage implements OnInit {
 
   selectDate(day: any) {
     if (!day.date) return;
-
-    // Marcar como selecionado ou desselecionar o dia
+    
     const date = day.fullDate;
     const index = this.selectedDates.findIndex(d => d.toDateString() === date.toDateString());
     if (index >= 0) {

@@ -12,7 +12,7 @@
   </ion-toolbar>
 
   <div class="detalhes-profissional-container">
-    <!-- Informações principais do profissional -->
+
     <div class="perfil-info">
       <img [src]="profissionalFoto" alt="{{ profissionalNome }}" class="foto-perfil" />
       <h2 class="nome-profissional">{{ profissionalNome }}</h2>
@@ -27,7 +27,6 @@
       </div>
     </div>
 
-    <!-- Feedback dos clientes -->
     <div class="feedback-section">
       <h3 class="Feedback-h3">Feedback</h3>
       <div *ngFor="let feedback of feedbacks" class="feedback-card">

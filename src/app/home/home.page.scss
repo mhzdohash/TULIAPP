@@ -18,7 +18,7 @@
 }
 
 ion-content {
-  --background: #FBF8F4; /* Cor de fundo personalizada */
+  --background: #FBF8F4;
 
   .text-image-container {
     display: flex;
@@ -29,22 +29,22 @@ ion-content {
 
 
   .side-image {
-    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-left: 20px; /* Espaço entre a imagem e o texto */
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
   }
-  
-  
+
+
 }
 .center-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; /* Ajuste a altura do contêiner conforme necessário */
-  font-size: 100px; /* Tamanho da fonte */
-  font-weight: 300; /* Peso mais fino da fonte */
-  font-family: 'Josefin Sans', sans-serif; /* Fonte aplicada */
-  line-height: 1.5; /* Ajuste a altura da linha conforme necessário */
+  height: 50vh;
+  font-size: 100px;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5; 
   color: #D9B1AD;
 }
 

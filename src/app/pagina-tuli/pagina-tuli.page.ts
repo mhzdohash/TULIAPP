@@ -13,8 +13,7 @@ export class PaginaTuliPage{
   goToLogin() {
     this.navController.navigateForward('/login');
   }
-
-  // Função para navegação ao cadastro
+  
   goToCadastro() {
     this.navController.navigateForward('/cadastro');
   }
