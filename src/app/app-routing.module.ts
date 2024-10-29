@@ -95,7 +95,15 @@ const routes: Routes = [
   {
     path: 'detalhes-profissional/:id',
     loadChildren: () => import('./detalhes-profissional/detalhes-profissional.module').then( m => m.DetalhesProfissionalPageModule)
+  },  {
+    path: 'cliente-perfil',
+    loadChildren: () => import('./cliente-perfil/cliente-perfil.module').then( m => m.ClientePerfilPageModule)
   },
+  {
+    path: 'cliente-editar-perfil',
+    loadChildren: () => import('./cliente-editar-perfil/cliente-editar-perfil.module').then( m => m.ClienteEditarPerfilPageModule)
+  },
+
 
 
 ];

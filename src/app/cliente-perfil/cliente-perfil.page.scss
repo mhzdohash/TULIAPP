@@ -1,0 +1,157 @@
+ion-content {
+  --background: #FBF8F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.text-image-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.image {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+  }
+  .center-text {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    color: #D9B1AD;
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+
+  .background-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .background {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    color: #FBF8F4;
+  }
+
+  .profile-container {
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #CC9C97;
+    object-fit: cover;
+  }
+
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px ;
+    margin-top: -100px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #595859;
+  }
+
+  .edit-button {
+    color: #595859;
+    width: auto;
+    height: auto;
+  }
+
+
+  .description {
+    padding: 20px;
+    font-size: 16px;
+    color: #595859;
+    text-align: left;
+    margin-top: -40px;
+    font-family: 'Prompt', sans-serif;
+  }
+
+  .procedures {
+    padding: 20px;
+  }
+
+
+
+  .procedure-box {
+    background-color: #D9B1AD;
+    padding: 15px;
+    border-radius: 0px;
+    margin-bottom: 13px;
+  }
+
+  .procedure-box h3 {
+    font-size: 19px;
+    font-weight: 400px;
+    margin-bottom: 0px;
+    font-family:'Josefin Sans';
+    color: #FFFFFF;
+  }
+
+  .procedure-box p {
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: 'Prompt', sans-serif;
+  }
+
+  ion-footer {
+    --background: #FAE5E1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-menu {
+    justify-content: space-around;
+    text-align: center;
+    font-size: 12px;
+    color: #A95858;
+  }
+
+  ion-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #D9B1AD;
+  }
+
+
+  .perfil {
+    color: #A95858;
+  }
+
+  ion-button ion-icon {
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+
+
+
+  .altura{
+    height: 70px;
+  }

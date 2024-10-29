@@ -12,31 +12,27 @@
 </ion-header>
 
 <ion-content>
-  <div *ngFor="let categoria of categorias">
-    <h2 class="nomeCategoria">{{ categoria.nome }}</h2>
 
-    <div class="carousel-container">
-      <ion-button fill="clear" (click)="anterior(categoria)" class="nav-button">
-        <ion-icon name="chevron-back-outline"></ion-icon>
-      </ion-button>
-
-      <div class="carousel-slide">
-
-        <ion-card *ngFor="let produto of categoria.produtos; let i = index"
-                  [class.active]="i === categoria.slideIndex"
-                  (click)="i === 0 ? comprarProduto(produto) : null">
-          <img [src]="produto.imagem" alt="{{ produto.nome }}" />
-          <ion-card-content>
-            <h3 class="nomeProduto">{{ produto.nome }}</h3>
-          </ion-card-content>
-        </ion-card>
-      </div>
-
-      <ion-button fill="clear" (click)="proximo(categoria)" class="nav-button">
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-      </ion-button>
-    </div>
+  <div class="background-image">
+    <img src="./assets/icon/back.jpeg" alt="Imagem de Fundo" class="background">
   </div>
+
+  <div class="profile-container">
+    <img src="/assets/icon/pexels-vinicius-wiesehofer-289347-1130626.jpg" alt="Foto de Perfil" class="profile-picture">
+  </div>
+
+  <div class="profile-info">
+    <span class="name">{{ cliente.nome }}</span>
+    <ion-button fill="clear" class="edit-button" routerLink="/cliente-editar-perfil">
+      <ion-icon name="create-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="description">
+    <p>{{ cliente.descricao }}</p>
+  </div>
+
+
 </ion-content>
 
 <div class="altura"></div>
@@ -52,19 +48,19 @@
           </ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" color="custom" routerLink="/cliente-chat">
+          <ion-button    fill="clear" color="custom" routerLink="/cliente-chat">
             <ion-icon name="chatbubble-outline"></ion-icon>
             <span></span>
           </ion-button>
         </ion-col>
         <ion-col>
-          <ion-button class="produto" fill="clear" color="custom" routerLink="/cliente-produtos">
+          <ion-button fill="clear" color="custom" routerLink="/cliente-produtos">
             <ion-icon name="cart-outline"></ion-icon>
             <span></span>
           </ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" color="custom" routerLink="/cliente-perfil">
+          <ion-button class="perfil" fill="clear" color="custom" routerLink="/cliente-perfil">
             <ion-icon name="person-outline"></ion-icon>
             <span></span>
           </ion-button>

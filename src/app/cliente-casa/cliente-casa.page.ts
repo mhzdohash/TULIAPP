@@ -8,7 +8,7 @@ import { NavController } from '@ionic/angular';
 })
 export class ClienteCasaPage {
   profissionais = [
-    { nome: 'Dra. Maria Alves', descricao: 'Especialista em dermatologia estética.', id: 1, foto: 'assets/icon/doutor1.jpg' },
+    { nome: 'Dra. Amanda Oliveira', descricao: 'Especialista em dermatologia estética.', id: 1, foto: 'assets/icon/Foto-doutora-Ana-Elisa.jpg' },
     { nome: 'Dr. Carlos Gonçalves', descricao: 'Focado em bem-estar e naturalidade.', id: 2, foto: 'assets/icon/doutor2.jpg' },
     { nome: 'Dr. Fernando Silva', descricao: 'Experiência em procedimentos minimamente invasivos.', id: 3, foto: 'assets/icon/doutor3.jpg' },
   ];

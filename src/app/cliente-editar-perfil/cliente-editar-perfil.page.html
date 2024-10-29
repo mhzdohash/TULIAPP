@@ -1,0 +1,51 @@
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<ion-content>
+
+  <ion-toolbar class="back">
+  <ion-buttons slot="start">
+    <ion-back-button text="" defaultHref="/cliente-perfil"></ion-back-button>
+  </ion-buttons>
+  <ion-title class="edit">Editar perfil</ion-title>
+</ion-toolbar>
+
+  <div class="container">
+
+    <div class="profile-image-container">
+      <div class="profile-image"></div>
+    </div>
+
+    <ion-list>
+
+      <ion-item>
+        <ion-label position="stacked" class="label">Nome</ion-label>
+        <ion-input class="descricao" [(ngModel)]="cliente.nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" class="label">Descrição</ion-label>
+        <ion-textarea class="descricao"  [(ngModel)]="cliente.descricao"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" class="label">Gênero</ion-label>
+        <ion-select class="descricao" [(ngModel)]="cliente.genero">
+          <ion-select-option value="Feminino">Feminino</ion-select-option>
+          <ion-select-option value="Masculino">Masculino</ion-select-option>
+          <ion-select-option value="Outro">Outro</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <div class="salvar">
+
+      <ion-button expand="block" (click)="salvarAlteracoes()">
+        Salvar alterações
+      </ion-button>
+    </div>
+    </div>
+
+</ion-content>
+
+

@@ -21,10 +21,10 @@
         <ion-icon name="star" *ngFor="let star of estrelas" class="estrela-icon"></ion-icon>
       </div>
       <div class="botao">
-      <ion-button expand="block" class="mensagem-button" color="custom">
-        Enviar Mensagem
-      </ion-button>
-    </div>
+        <ion-button expand="block" class="mensagem-button" color="custom" (click)="enviarMensagem()">
+          Enviar Mensagem
+        </ion-button>
+      </div>
     </div>
 
     <!-- Feedback dos clientes -->
